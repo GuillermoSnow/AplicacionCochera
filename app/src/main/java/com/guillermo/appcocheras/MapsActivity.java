@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    //commit de prueba
     private GoogleMap mMap;
     LocationManager locationManager;
     LocationListener locationListener;
@@ -82,7 +83,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mMap.clear();
                 MarkerOptions userlocation1= new MarkerOptions().position(userLocation).title("User Position");
                 userlocation1.draggable(true);
-                userlocation1.icon()
+//                userlocation1.icon();
                 mMap.addMarker(userlocation1);
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(userLocation));
             }
